@@ -2,11 +2,15 @@
   "name": "ncs-linkstation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/linkstation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "lmetsaranta",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 12.6.1",
+    "npm": ">= 7.20.5"
+  }
 }
