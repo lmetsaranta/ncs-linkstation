@@ -1,4 +1,4 @@
 # IntelliJ’s project specific settings files
 .idea
-
+node_modules
 package-lock.json

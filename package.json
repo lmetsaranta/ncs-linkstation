@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --silent"
   },
   "keywords": [],
   "author": "lmetsaranta",
@@ -12,5 +12,8 @@
   "engines": {
     "node": ">= 12.6.1",
     "npm": ">= 7.20.5"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
