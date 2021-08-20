@@ -1,5 +1,5 @@
-let Device = require("./device");
 let linkstations = require("./assets/linkstations");
+let devices = require("./assets/devices");
 
 // pythagoras theorem a² + b² = c²
 const distanceBetweenTwoPoints = (x1, y1, x2, y2) => {
@@ -27,10 +27,10 @@ const power = (device, linkstation) => {
 
 /**
  *  Main function to calculate best linkstation for the device
- *  @param {Object[]} linkstations Array of linkstations available
+ *  @param {Object.<stationArray[]>} linkstations Array of linkstations available
+ *  @param {Object} device Device object with x & y coordinates
  */
-const main = (linkstations) => {
-  const device = new Device(0, 0);
+const main = (linkstations, device) => {
   let pow = 0;
   let bestStation;
 
@@ -49,4 +49,7 @@ const main = (linkstations) => {
   }
 };
 
-main(linkstations);
+// Run example output for predefined devices
+devices.deviceArray.map((device) => {
+  main(linkstations, device);
+});
